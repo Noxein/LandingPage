@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    color:white;
+}
+body{
+    background: radial-gradient(circle , rgba(0,0,0,0.8) 70%, rgba(92, 92, 92, 0)), url("https://images2.alphacoders.com/631/631068.jpg") no-repeat;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    font-family: Monospace, sans-serif;
+    font-size: 50px;
+}
+.navbar .content{
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    text-align: center;
+}
+.navbar .content .navbarText{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+.links{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.links .content{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.linksChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.linksChild>img{
+    border: rgba(15, 46, 66, 0.5) 20px solid;
+    border-radius: 20px;
+}
+.linksChild>p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
