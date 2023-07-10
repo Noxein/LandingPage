@@ -2,6 +2,9 @@
     box-sizing: border-box;
     color:white;
 }
+a{
+    text-decoration: none;
+}
 body{
     background: radial-gradient(circle , rgba(0,0,0,0.8) 70%, rgba(92, 92, 92, 0)), url("https://images2.alphacoders.com/631/631068.jpg") no-repeat;
     margin: 0;
@@ -13,12 +16,17 @@ body{
     height: 100vh;
     font-family: Monospace, sans-serif;
     font-size: 50px;
+    overflow-y: scroll
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .navbar .content{
     height: 120px;
     background-color: rgba(0, 0, 0, 0.5);
     flex-wrap: wrap;
     text-align: center;
+    margin: 0 auto;
 }
 .navbar .content .navbarText{
     height: 100%;
