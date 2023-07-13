@@ -96,5 +96,30 @@ function game(){
         }
     }
 
-game();
-winner();
+//game();
+//winner();
+
+let n = 1;
+
+nextPrime:
+for(let i=1; i<=n; i++){
+
+    for(let j=2; j<i; j++){
+
+        if(i%j==0) continue nextPrime;
+    }
+    console.log(i);
+    
+}
+ const btn = document.querySelector("#btn");
+ btn.onclick = () => alert("SUPP");
+
+ const btn2 = document.querySelector("#btn2");
+ btn2.addEventListener('click', ()=>{
+    alert("SUPP 2");
+ })
+
+ btn.addEventListener('click', function (e){
+    e.target.style.background = "blue";
+    btn2.style.background = "red";
+ })
