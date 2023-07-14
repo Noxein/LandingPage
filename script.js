@@ -16,7 +16,6 @@ function randMath(){
         return wallpArr[2];
     }
 }
-console.log(randMath());
 
 function changeWallpaper(wallpaper){
     window.addEventListener('keypress',event =>{
@@ -25,6 +24,4 @@ function changeWallpaper(wallpaper){
             }
         }
     )}
-
-changeWallpaper();
 changeWallpaper();

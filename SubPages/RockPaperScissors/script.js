@@ -4,12 +4,14 @@ let scissors = document.getElementById("scissors");
 
 let playerPicks = [rock,paper,scissors]
 
+let whiteBorder = 'border: rgba(255,255,255,0.5) solid 3px;'
 //Each Button Functions
 rock.addEventListener('click',function(){
     playerPicks.forEach(pick => pick.style= "border: none")
     computerPicks.forEach(pick => pick.style= "border: none")
     oneRound(correctInput(rock.innerText), getComputerChoice);
     playerPick.textContent = "Rock"
+    rock.style = whiteBorder
 })
 
 paper.addEventListener('click',function(){
@@ -17,6 +19,7 @@ paper.addEventListener('click',function(){
     computerPicks.forEach(pick => pick.style= "border: none")
     oneRound(correctInput(paper.innerText), getComputerChoice);
     playerPick.textContent = "Paper"
+    paper.style = whiteBorder
 })
 
 scissors.addEventListener('click',function(){
@@ -24,6 +27,7 @@ scissors.addEventListener('click',function(){
     computerPicks.forEach(pick => pick.style= "border: none")
     oneRound(correctInput(scissors.innerText), getComputerChoice);
     playerPick.textContent = "Scissors"
+    scissors.style = whiteBorder
 })
 
 let playerPick = document.getElementById('outcome1');
@@ -36,6 +40,7 @@ let Cpaper = document.getElementById('Cpaper');
 let Cscissors = document.getElementById('Cscissors');
 
 let computerPicks = [Crock,Cpaper,Cscissors]
+
 
 //Generates Paper Rock or Scissors
 function getComputerChoice(){
@@ -101,88 +106,81 @@ function winner(){
     }
 }
 */
+function game(){
+    for(let i=0; i<5 ;i++){
+        oneRound(correctInput(),getComputerChoice());
 
+        }
+    }
 
-let redBorder = "border: red solid 3px;"
-let greenBorder = 'border: green solid 3px;'
-let orangeBorder = 'border: orange solid 3px;'
-
+//game();
+//winner();
 
 function oneRound(playerSelection,ComputerChoice){
     ComputerChoice = getComputerChoice();
     if(ComputerChoice===playerSelection){
 
-        matchResult.textContent = "Its a draw!"
+        result = "draw";
         computerPick.textContent = ComputerChoice;
-        playerPicks.forEach(pick => pick.style = orangeBorder)
-        computerPicks.forEach(pick => pick.style = orangeBorder)
 
     }
     else if ((ComputerChoice=="paper")&&(playerSelection=="rock")){
 
-        matchResult.textContent = "You lose Paper beats Rock";
+        result= false;
         computerPick.textContent = ComputerChoice;
-        rock.style = redBorder
-        Cpaper.style  = greenBorder;
 
     }
     else if((ComputerChoice=="scissors")&&(playerSelection=="paper")){
 
-        matchResult.textContent = "You lose Scissors beats Paper";
+        result = false
         computerPick.textContent = ComputerChoice;
-        paper.style = redBorder;
-        Cscissors.style = greenBorder;
-
     }
     else if((ComputerChoice=="rock")&&(playerSelection=="scissors")){
 
-        matchResult.textContent = "You lose Rock beats Scissors" ;
+        result= false
         computerPick.textContent = ComputerChoice;
-        scissors.style = redBorder
-        Crock.style = greenBorder
 
     }
     else if ((ComputerChoice=="rock")&&(playerSelection=="paper")){
 
-        matchResult.textContent = "You win Paper beats Rock";
+        result= true
         computerPick.textContent = ComputerChoice;
-        Crock.style = redBorder
-        paper.style = greenBorder
-
     }
     else if((ComputerChoice=="paper")&&(playerSelection=="scissors")){
 
-        matchResult.textContent = "You Win Scissors beats Paper";
+        result = true
         computerPick.textContent = ComputerChoice;
-        Cpaper.style = redBorder
-        scissors.style = greenBorder
-
     }
     else if((ComputerChoice=="scissors")&&(playerSelection=="rock")){
 
-        matchResult.textContent = "You win Rock beats Scissors" ;
+        result= true
         computerPick.textContent = ComputerChoice;
-        Cscissors.style = redBorder
-        rock.style = greenBorder
-
     }
 
-    else{
-
-        result.textContent = "You win";
+    switch(result){
+        case true:
+            matchResult.textContent = "You Win";
+            matchResult.style.backgroundColor = "green";
+            break;
+        case false:
+            matchResult.textContent = "You Lose";
+            matchResult.style.backgroundColor = "red";
+            break;
+        case "draw":
+            matchResult.textContent = "It's a Tie";
+            matchResult.style.backgroundColor = "orange";
+            break;
+    }
+    if(ComputerChoice==Crock.innerText.toLowerCase())
+    {  
+        Crock.style = whiteBorder
+    }
+    else if(ComputerChoice==Cpaper.innerText.toLowerCase())
+    {
+        Cpaper.style = whiteBorder
+    }
+    else
+    {
+        Cscissors.style = whiteBorder
     }
 }
-
-/*
-function game(){
-    for(let i=0; i<5 ;i++){
-        oneRound(correctInput(),getComputerChoice());
-        console.log(Machine);
-        console.log(Player);
-        console.log(Draw);
-
-        }
-    }
-*/
-//game();
-//winner();
