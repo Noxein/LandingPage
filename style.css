@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 }
 .linksChild>img{
     border: rgba(15, 46, 66, 0.5) 20px solid;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 .linksChild>p{
     font-size: 30px;
