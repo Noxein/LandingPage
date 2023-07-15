@@ -2,6 +2,12 @@ let container = document.getElementById('container');
 let contwidth = container.clientWidth;;
 let color = document.getElementById('color');
 
+let sliderValue = document.getElementById('sliderValue');
+
+let myRange = document.getElementById('myRange');
+console.log(myRange.value)
+colorselected = true;
+rainbowSelected = false;
 
 function grid(width){
     container.innerHTML='';
@@ -30,13 +36,31 @@ smoldivwidth +="px";
             div.style.height = smoldivwidth;
         })
 
-    smoldivs.forEach(div=>{
-        div.addEventListener('click',()=>{
-
+let eraser = document.getElementById('eraser');
+    eraser.addEventListener('click',()=>{
+    colorselected = false;
+    rainbowSelected = false
+})
+color.addEventListener('click',()=>{
+    colorselected = true;
+    rainbowSelected = false;
+})
+let rainbow = document.getElementById('rainbow');
+rainbow.addEventListener('click',()=>{
+    rainbowSelected = true
+})
+smoldivs.forEach(div=>{
+    div.addEventListener('click',()=>{
+        if(rainbowSelected==true){
+            div.style.backgroundColor = randomColor();
+        }
+        else if(colorselected==true){
             div.style.backgroundColor = color.value
+        }else if(colorselected==false){
+            div.style.backgroundColor = "rgba(0, 0, 0, 0)"
+            }
         })
     })
-
 }
 
 const buttons = document.querySelectorAll('.grid')
@@ -45,10 +69,19 @@ const buttons = document.querySelectorAll('.grid')
 buttons.forEach(button=>{
     button.addEventListener('click' ,()=>grid(Number(button.innerText)))
 })
+myRange.addEventListener('change',()=>{
+    grid(Number(myRange.value))
+    sliderValue.innerHTML =myRange.value +" x "+myRange.value
+})
 window.addEventListener('keypress', event=>{
     if(event.key=="r"){
         container.innerHTML='';
     }
 })
 
-
+function randomColor(){
+    number1 = Number((Math.random()*255).toFixed(0));
+    number2 = Number((Math.random()*255).toFixed(0));
+    number3 = Number((Math.random()*255).toFixed(0));
+    return "rgb("+number1+","+number2+","+number3+")";
+}
