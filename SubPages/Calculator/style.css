@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://images2.alphacoders.com/631/631068.jpg"); 
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.container{
+    width: 500px;
+    height: 750px;
+    margin: 10vh auto;
+    border: 5px rgba(70, 28, 28,0.5) solid;
+    border-radius: 2%;
+    background-color: rgba(12, 0, 0, 0.5);
+}
+.display{
+    width: 90%;
+    height: 200px;
+    background-color: rgba(253, 253, 253, 0.4);
+    margin: 10px auto;
+    border: 5px rgba(70, 28, 28,0.5) solid;
+    border-radius: 2%;
+    color: white;
+    padding: 20px;
+}
+.firstrow,
+.row{
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-around;
+    margin:0 auto;
+}
+button{
+    width: 90px;
+    height: 90px;
+    font-size: 25px;
+    background-color: rgba(255, 105, 180, 0.2);
+    border: rgba(255, 255, 255, 0.2) 3px solid;
+    border-radius: 10px;
+}
+.lastrow{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:0 auto;
+}
+.lastrowbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.lastrowbtn .onetwo{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 215px;
+}
+.lastrowbtn .zero{
+    justify-content: center;
+    margin-left: 5px;
+}
+.lastrowbtn .zero>button{
+    justify-content: center;
+    width: 205px;
+}
+.frow{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.threendot{
+    gap: 10px;
+    margin-right: 10px;
+}
+.equeality>button{
+    height: 190px;
+    margin-right: 5px;
+}
+.operator{
+    background: rgba(10, 94, 150,0.9);
+}
+.dot,
+.equeality>button{
+    background-color: rgba(136, 150, 10, 0.5);;
+}
+.MC,
+.MC2{
+    background-color: rgba(226, 14, 14, 0.5);;
+}
