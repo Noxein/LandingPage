@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="logo">
+                <img src="greyyarts.png" alt="Grey Arts Proflie Picture" width="100px">
+                <p>Greyy Arts</p>
+            </div>
+        </div>
+        <form action="createacc">
+            <div class="formcol1">
+                <p>This ain a real service! Impressed? You should start learnig web design too!</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="formcol2">
+                <div class="wrapper">
+                    <p>Let's do this!</p>
+                    <div class="inputwrapper">
+                        <div class="form-flex-column">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" minlength="3" maxlength="15" placeholder="Andrew" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@domain.com" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="pass" value="" minlength="6" maxlength="20" required>
+                        </div>
+                        <div class="form-flex-column">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Smith" required>
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="tel" minlength='9' maxlength='11' id="phonenumber" name="phonenumber" pattern="^[2-9]\d{2}-\d{3}-\d{3}$"  placeholder="123-456-789" required>
+                            <label for="passwordcnf">Confirm Password</label>
+                            <input type="password" id="passwordcnf" name="passwordcnf" class="pass2" value="" minlength="6" maxlength="20" required>
+                        </div>
+                        <div class="form-flex-column js-password-output">
+                            <p class="short-password"></p>
+                            <p class="same-passwords"></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formcol3">
+                <button type="submit" class="submitbtn" disabled>Create Account</button>
+                <p style="margin-left: 2em;">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

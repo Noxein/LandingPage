@@ -1,0 +1,149 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(Norse-Bold.otf);
+  }
+body{
+    background: #1e201c;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.image{
+    background-image: url('https://pbs.twimg.com/media/F12WdYkaUAAhml7?format=jpg&name=4096x4096');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.5);
+    
+}
+.logo p{
+    font-size: 50px;
+    color: white;
+    font-family: NorseBold;
+}
+
+form{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 230, 233);
+    -webkit-box-shadow: -2px 4px 24px 21px rgba(24, 24, 24, 1);
+    -moz-box-shadow: -2px 4px 24px 21px rgba(24, 24, 24, 1);
+    box-shadow: -2px 4px 24px 21px rgba(24, 24, 24, 1);
+}
+.formcol1,
+.formcol2,
+.formcol3{
+    flex: 1;
+}
+.formcol1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 150px
+}
+.formcol2{
+background-color: rgba(180, 185, 180, 0.5);
+display: flex;
+padding: 20px 50px;
+justify-content: space-around;
+-webkit-box-shadow: 1px 4px 24px -3px rgba(0, 0, 0, 1);
+-moz-box-shadow: 1px 4px 24px -3px rgba(0, 0, 0, 1);
+box-shadow: 1px 4px 24px -3px rgba(0, 0, 0, 1);
+}
+.form-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.inputwrapper{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+label{
+    font-weight: lighter;
+    font-size: 15px;
+}
+input:focus{
+    -webkit-box-shadow: 8px 6px 24px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 6px 24px -9px rgba(66, 68, 90, 1);
+    box-shadow: 8px 6px 24px -9px rgba(66, 68, 90, 1);
+}
+.formcol3{
+    display: flex;
+    flex-direction: column;
+}
+.formcol3 :is(button,p){
+    margin: 40px 30px;
+}
+.formcol3 button{
+    width: 150px;
+    height: 60px;
+}
+.formcol3 p{
+    width: 300px;
+    margin-top: -30px;
+}
+input{
+    height: 30px;
+    border-radius: 7px;
+    border: 3px solid rgb(165, 165, 165);
+}
+input:required {
+    border-color: rgb(163, 160, 160);
+}
+input:required:valid{
+    border: 3px solid green;
+}
+input:required:focus:valid{
+    background-color: rgba(197, 216, 115,0.3);
+    border: 3px solid green;
+}
+input:focus:invalid{
+    background-color: rgba(216, 115, 115, 0.3);
+    border: 3px solid red;
+}
+.submitbtn{
+    background-color: #4d7728;
+    border: white 3px solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.js-password-output p{
+    font-size: 15px;
+}
