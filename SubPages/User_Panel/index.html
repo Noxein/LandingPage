@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Panel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90fead1a85.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
 
         <div class="dashboard">
             <div class="dash">
-                <img src="icons/layout.svg">
+                <i class="fa-solid fa-table-columns"></i>
                 <p>Dashboard</p>
             </div>
             <div class="navigation">
 
-                <img src="icons/home.svg">
+                <i class="fa-solid fa-house fa"></i>
                 <p>Home</p>
 
-                <img src="icons/user.svg">
+                <i class="fa-solid fa-user"></i>
                 <p>Profile</p>
 
-                <img src="icons/message-square.svg">
+                <i class="fa-solid fa-message"></i>
                 <p>Messages</p>
 
-                <img src="icons/clock.svg">
+                <i class="fa-solid fa-clock"></i>
                 <p>History</p>
 
-                <img src="icons/list.svg">
+                <i class="fa-solid fa-list"></i>
                 <p>Tasks</p>
 
-                <img src="icons/users.svg">
+                <i class="fa-solid fa-user-group"></i>
                 <p>Communities</p>
 
             </div>
             <div class="support">
 
-                <img src="icons/settings.svg">
+                <i class="fa-solid fa-gear"></i>
                 <p>Settings</p>
 
-                <img src="icons/help-circle.svg">
+                <i class="fa-solid fa-circle-info"></i>
                 <p>Support</p>
 
-                <img src="icons/shield.svg">
+                <i class="fa-solid fa-shield"></i>
                 <p>Privacy</p>
 
             </div>
@@ -55,22 +56,24 @@
                 <div class="up">
 
                     <div class="left">
-                        <img src="icons/search.svg" alt="search icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text">
                     </div>
 
                     <div class="right">
-                        <img src="icons/bell.svg" alt="bell icon">
-                        <img src="icons/user_avater.jpg" alt="user avatar">
+                        <i class="fa-solid fa-bell"></i>
+                        <img src="avatars/maciek.png" alt="user avatar" class="avatar">
                         <p>Noxein Mirenzu</p>
                     </div>
 
                 </div>
                 <div class="down">
                     <div class="left">
-                        <img src="icons/user_avater.jpg" alt="user avatar">
-                        <span>Hi there,</span><br>
-                        <p>Noxein Mirenzu(@Noxein)</p>
+                        <img src="avatars/maciek.png" alt="user avatar" class="avatar">
+                        <div>
+                            <p style="font-size: 15px;">Hi there,</p>
+                            <p style="font-size: 25px; font-weight: bold;">Noxein Mirenzu(@noxein)</p>
+                        </div>
                     </div>
                     <div class="right">
                         <div>New</div>
@@ -80,11 +83,30 @@
                 </div>
             </div>
             <div class="projects-annouc-trend-wrapper">
-                <p>Your Projects</p>
-                <div class="projects-wrapper">
-                    <div class="projects">
-                        <div class="project">
-                            <div>
+                <div class="p-wrapp">
+                    <p class="headertext">Your Projects</p> 
+                        <div class="projects">
+                            <div class="project">                                
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta ! Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Impedit consequuntur labore inventore nulla nihil deserunt iusto 
+                                                autem culpa, natus enim minima vero quos perspiciatis veritatis, officiis voluptatem.
+                                                 Quod, eveniet? Nemo.</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>                                
+                            </div>
+                            <div class="project">                                
                                 <div class="color">
                                 </div>
                                 <div class="project-content">
@@ -93,126 +115,129 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Ipsum ullam aperiam, praesentium assumenda laborum aliquam
                                             numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
+                                            laboriosam enim tempora totam adipisci!
+                                            iatis veritatis, officiis voluptatem.
+                                            Quod, eveniet? Nemo</p>
                                     </div>
                                     <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-code-branch"></i>
                                     </div>
-                                </div>
-                            </div>
+                                </div>                                
                         </div>
-
-                        <div class="project">
-                            <div>
-                                <div class="color">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-content-text">
-                                        <h3>Calculator Project</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Ipsum ullam aperiam, praesentium assumenda laborum aliquam
-                                            numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
-                                    </div>
-                                    <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
-                                    </div>
-                                </div>
+                        <div class="project">                                
+                            <div class="color">
                             </div>
-                        </div>
-
-                        <div class="project">
-                            <div>
-                                <div class="color">
+                            <div class="project-content">
+                                <div class="project-content-text">
+                                    <h3>Calculator Project</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ipsum ullam Lorem ipsum dolor sit amet consectetur, adipisicing elem dignissimos itaque veritatis, eaque cumque. aperiam, praesentium assumenda laborum aliquam
+                                        numquam cumquetempora totam adipisci!</p>
                                 </div>
-                                <div class="project-content">
-                                    <div class="project-content-text">
-                                        <h3>Calculator Project</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Ipsum ullam aperiam, praesentium assumenda laborum aliquam
-                                            numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
-                                    </div>
-                                    <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
-                                    </div>
+                                <div class="project-icons">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-code-branch"></i>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div>
-                                <div class="color">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-content-text">
-                                        <h3>Calculator Project</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Ipsum ullam aperiam, praesentium assumenda laborum aliquam
-                                            numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
-                                    </div>
-                                    <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div>
-                                <div class="color">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-content-text">
-                                        <h3>Calculator Project</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Ipsum ullam aperiam, praesentium assumenda laborum aliquam
-                                            numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
-                                    </div>
-                                    <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div>
-                                <div class="color">
-                                </div>
-                                <div class="project-content">
-                                    <div class="project-content-text">
-                                        <h3>Calculator Project</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Ipsum ullam aperiam, praesentium assumenda laborum aliquam
-                                            numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
-                                            laboriosam enim tempora totam adipisci!</p>
-                                    </div>
-                                    <div class="project-icons">
-                                        <img src="icons/star.svg" alt="favorite icon">
-                                        <img src="icons/eye.svg" alt="watch icon">
-                                        <img src="icons/git-branch.svg" alt="share/branch icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </div>                                
                     </div>
+                            <div class="project">                                
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
+                                                laboriosam enim tempora totam adipisci!</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project">
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
+                                                laboriosam enim tempora totam adipisci!</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project">
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
+                                                laboriosam enim tempora totam adipisci!</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="project">
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
+                                                laboriosam enim tempora totam adipisci!</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="project">
+                                    <div class="color">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-content-text">
+                                            <h3>Calculator Project</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Ipsum ullam aperiam, praesentium assumenda laborum aliquam
+                                                numquam cumque nemo soluta saepe amet debitis voluptatum odio corrupti,
+                                                laboriosam enim tempora totam adipisci!</p>
+                                        </div>
+                                        <div class="project-icons">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-eye"></i>
+                                            <i class="fa-solid fa-code-branch"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
                 <div class="sidebar">
                     <div class="annoucments-wrapper">
-                        <p>Annoucments</p>
+                        <p class="headertext">Annoucments</p>
                         <div class="annoucments">
                             <div>
                                 <h4>Site Maitenance</h4>
@@ -232,23 +257,36 @@
                         </div>
                     </div>
                     <div class="trending-wrapper">
-                        <p>Trending</p>
+                        <p class="headertext">Trending</p>
                         <div class="wrapper">
                             <div>
-                                <p>@vi_told</p>
-                                <p>World Peace Builder</p>
+                                <img src="avatars/piotr.png" alt="user avatar" class="useravatar">
+                                <div class="user-info">
+                                    <span>@vi_told</span>
+                                    <span>World Peace Builder</span>
+                                </div>
                             </div>
                             <div>
-                                <p>@fiflak</p>
-                                <p>Super Cool Projectant</p>
+                                <img src="avatars/kacper.png" alt="user avatar" class="useravatar">
+                                <div class="user-info">
+                                    <span>@fiflak</span>
+                                    <span>Super Cool Projectant</span>
+                                </div>
                             </div>
                             <div>
-                                <p>@smigol</p>
-                                <p>Life Changing App</p>
+                                
+                                <img src="avatars/smigol.png" alt="user avatar" class="useravatar">
+                                <div class="user-info">
+                                    <span>@smigol</span>
+                                    <span>Life Changing App</span>
+                                </div>
                             </div>
                             <div>
-                                <p>@kobi</p>
-                                <p>No Traffic Maker</p>
+                                <img src="avatars/kobi.png" alt="user avatar" class="useravatar">
+                                <div class="user-info">
+                                    <span>@kobi</span>
+                                    <span>No Traffic Maker</span>
+                                </div>
                             </div>
                         </div>
                     </div>
