@@ -35,7 +35,8 @@ body{
 .projects-annouc-trend-wrapper{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color:var(--background)
+    background-color:var(--background);
+    grid-template-rows: 1fr;
 }
 .search>.up,
 .search>.down{
@@ -155,8 +156,10 @@ z-index: 3;
     align-items: center;
     padding: 20px;
 }
-.project{
+.project,
+.add-project{
     width: 100%;
+    min-height: 200px;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
@@ -169,9 +172,16 @@ z-index: 3;
     width: 5%;
     background-color: var(--project-accent);
 }
+.color:hover> .project-content{
+    background-color: greygreen;
+    transition-duration: 500ms;
+}
 .project-content{
     width: 95%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .project-content-text>h3{
     margin-top: 0px;
@@ -184,6 +194,7 @@ z-index: 3;
 }
 .p-wrapp{
     padding: 0 20px 20px 20px;
+    background-color:var(--background);
 }
 .navigation,
 .dash,
@@ -215,4 +226,23 @@ z-index: 3;
     padding: 10px 20px;
     border-radius: 20px;
     color: white;
+}
+.add-project{
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid 3px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.2);
+}
+.parentproject{
+    display: none;
+}
+.toggled{
+    display: none;
+}
+.edit,
+.add-project{
+    cursor: pointer;
 }
